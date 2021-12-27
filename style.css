@@ -1,0 +1,134 @@
+:root {
+    --font: 'Montserrat';
+    --cor-fundo: #d9edf8;
+    --cor-pri: #c0dff1;
+    --cor-sec: #94ccee;
+    --cor-ter: #212c64;
+    --cor-qua: #5f85b4 ;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: var(--font);
+}
+
+section {
+    margin: auto;
+    max-width: 500px;
+    min-width: 320px;
+    height: auto;
+    align-items: center;
+    align-self: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--font);
+    box-shadow: inset 0 0 0.5em var(--cor-pri), 0 0 0.2em var(--cor-ter);
+    transition: 0.5s;
+}
+
+section:hover {
+    box-shadow: inset 0 0 10em var(--cor-pri), 0 0 1em var(--cor-ter);
+    transition: 0.5s;
+}
+
+#texto {
+    background-color: var(--cor-qua);
+    text-align: center;
+    width: 100%;  
+    border-radius: 10px 10px 0px 0px; 
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-weight: 900;
+    color: var(--cor-pri);
+}
+
+.subtext {
+    color: var(--cor-fundo) ;
+}
+
+.entradas {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#numero {
+    align-self: center;
+    text-align: center;
+    border-radius: 5px;
+    border-color: transparent;
+    font-family: var(--font);
+    width: auto;
+    height: 30px;
+    transition: 0.5s;
+}
+
+#numero:hover {
+    background-color: var(--cor-pri);
+    transition: 0.5s;
+    color: var(--cor-fundo);
+
+}
+
+#fan {
+    animation-name: rodar;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    margin-right: 5px;
+}
+
+/*@keyframes rodar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+} */
+
+.botoes {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.botao {
+    border: none;
+    margin-right: 5%;
+    background: var(--cor-sec);
+    border-radius: 5px;
+    font-family: var(--font);
+    height: 40px;
+    width: 90px;
+    transition: 0.5s;
+}
+
+.botao:hover {
+    background-color: var(--cor-pri);
+    transition: 0.5s;
+}
+
+#resposta {
+    color: var(--cor-qua);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
